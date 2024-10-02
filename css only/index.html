@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="banner">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1"><img src="https://i.pinimg.com/236x/12/94/03/12940343d2c9fd12e5ea85b4354bde32.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="https://i.pinimg.com/236x/c8/b7/41/c8b7413ccd33544ab59691a09a7b4107.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="https://i.pinimg.com/474x/3d/5e/3e/3d5e3e5c5cb9691d75bdf64dc6415171.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="https://i.pinimg.com/474x/be/9b/5a/be9b5a293ee79cc4630e6d899e78f510.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="https://i.pinimg.com/236x/a9/b4/6b/a9b46bd880168da3506fe8a4389300f3.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="https://i.pinimg.com/236x/46/4f/2a/464f2a4433f2274a865517d2340ad159.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="https://i.pinimg.com/236x/10/e6/f5/10e6f56af24122a3e66f22eda3df58b1.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="https://i.pinimg.com/236x/ce/a1/05/cea1058603cc256d62f29a756165e78e.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="https://i.pinimg.com/474x/a0/32/99/a03299c83e654749d0eade1df3fc8056.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="https://i.pinimg.com/474x/96/82/b9/9682b9aafff427f4cd14e44627cf75dd.jpg" alt=""></div>
+            </div>
+            <div class="content">
+                <h1 data-content="CSS ONLY">
+                    CSS ONLY
+                </h1>
+                <div class="model"></div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
